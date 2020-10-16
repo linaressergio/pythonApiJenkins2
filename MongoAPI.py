@@ -4,8 +4,8 @@ import logging as log
 
 class MongoAPI:
     def __init__(self, data):
-        self.client = MongoClient("mongodb://localhost:5000/")
-        #self.client = MongoClient("mongodb://mymongo_1:27017/")
+        #self.client = MongoClient("mongodb://localhost:5000/")
+        self.client = MongoClient("mongodb://mymongo_1:27017/")
       
         database = data['database']
         collection = data['collection']
